@@ -1,59 +1,47 @@
 <!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta name="HandheldFriendly" content="True">
+        <meta charset="utf-8">mona
         <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="cleartype" content="on">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 		<div class="wrapper">
 			<header class="header">
-				<h1>Upcoming</h1>
+				<h1>My Profile</h1>
 			</header>
-			<div class="content">
-				<div class="page-container">
-					<div id="upcoming" class="page">
-						<ul>
-							<li>
-								<a href="#">
-									<i class="icon-chevron-right"></i>
-									<h1>List Heading</h1>
-									<p>List Description</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="search-container">
-					<div id="upcoming" class="page">
-						<ul>
-							<li>
-								<a href="#">
-									<i class="icon-chevron-right"></i>
-									<h1>List Heading</h1>
-									<p>List Description</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<section class="content">
+				<div class="page" id="landing"><i class="icon-house"></i></div>
+				<div class="page" id="settings"><i class="icon-cogs"></i></div>
+				<div class="page" id="search"><i class="icon-search"></i></div>
+			</section>
 			<footer class="footer">
-				<div class="nav">
-					<ul>
-						<li><a class="upcoming" href="#upcoming"></a></li>
-						<li><a class="search" href="#search"></a></li>
-					</ul>
-				</div>
+				<a class="active" href="#lading" data-title="Landing">
+					<i class="icon-house"></i>
+					<span>Home</span>
+					<div></div>
+				</a>
+				<a href="#settings" data-title="Settings">
+					<i class="icon-cogs"></i>
+					<span>Settings</span>
+					<div></div>
+				</a>
+				<a href="#search" data-title="Search">
+					<i class="icon-search"></i>
+					<span>Search</span>
+					<div></div>
+				</a>
 			</footer>
 		</div>
         <script src="js/vendor/zepto.min.js"></script>
-        <script src="js/helper.js"></script>
+        <script src="js/vendor/cordova-2.3.0.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/helper.js"></script>
     </body>
 </html>
