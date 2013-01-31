@@ -50,11 +50,11 @@ var app = {
 		
 		$('.footer a').on('click', function(){
 			
+			if($(this).hasClass('active')) return false
+			
 			//Add transition for button animation
 			$('.footer a').css({ '-webkit-transition' : 'all .1s' })
 			$(this).find('div').css({ '-webkit-transition' : 'all .2s' })
-			
-			if($(this).hasClass('active')) return false
 			
 			$('.footer a').removeClass('active')
 			$(this).find('div').css({ 'opacity' : '0' })
